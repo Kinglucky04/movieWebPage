@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieHomes - Your Streaming Destination</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/movie.css">
+    
+    <!-- JavaScript -->
+    <script src="js/movie.js" type="module" defer></script>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <h1>M<span>H</span></h1>
+        </div>
+        <div class="sidebar-menu">
+            <a href="#home" class="sidebar-link active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+        
+            <a href="#movies" class="sidebar-link">
+                <i class="fas fa-film"></i>
+                <span>Movies</span>
+            </a>
+            <a href="#series" class="sidebar-link">
+                <i class="fas fa-tv"></i>
+                <span>Series</span>
+            </a>
+            <a href="#popular" class="sidebar-link">
+                <i class="fas fa-fire"></i>
+                <span>Popular</span>
+            </a>
+            <a href="#trending" class="sidebar-link">
+                <i class="fas fa-chart-line"></i>
+                <span>Trending</span>
+            </a>
+            <a href="#coming-soon" class="sidebar-link">
+                <i class="fas fa-hourglass-half"></i>
+                <span>Coming Soon</span>
+            </a>
+        </div>
+        <div class="sidebar-footer">
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="toggle-ball"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Navigation -->
+       <!-- Top Navigation -->
+<nav class="navbar">
+    <div class="nav-left">
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <h1 class="mobile-logo">MovieHomes</h1>
+    </div>
+    
+    <!-- Centered Search Bar -->
+    <div class="nav-center">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search movies, series...">
+        </div>
+    </div>
+    
+    <div class="nav-right">
+        <div class="profile">
+            <div class="profile-dropdown">
+                <img class="profile-pic" src="assets/images/profile.jpg" alt="Profile">
+                <span class="profile-text">Profile</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="profile-menu">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Help</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="hero-badge">NOW STREAMING</span>
+                <h1 class="hero-title">Dune: Part Two</h1>
+                <div class="hero-meta">
+                    <span class="hero-rating">
+                        <i class="fas fa-star"></i>
+                        8.5/10
+                    </span>
+                    <span class="hero-year">2024</span>
+                    <span class="hero-duration">2h 46min</span>
+                </div>
+                <p class="hero-desc">Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Watch Now
+                    </button>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Movie Sections -->
+        <div class="movie-sections" id="movies">
+            <!-- Trending Now -->
+            <section class="movie-section" id="trending">
+                <div class="section-header">
+                    <h2 class="section-title">Trending Now</h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="movie-grid">
+                    <!-- Movie Card 1 -->
+                    <div class="movie-card">
+                        <div class="movie-card-poster">
+                            <img src="assets/images/1.jpeg" alt="Movie">
+                            <div class="movie-card-overlay">
+                                <button class="btn-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="movie-card-info">
+                            <h3 class="movie-title">Oppenheimer</h3>
+                            <div class="movie-meta">
+                                <span>2023</span>
+                                <span>•</span>
+                                <span>3h</span>
+                                <span class="badge">8.6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 2 -->
+                    <div class="movie-card">
+                        <div class="movie-card-poster">
+                            <img src="assets/images/2.jpeg" alt="Movie">
+                            <div class="movie-card-overlay">
+                                <button class="btn-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="movie-card-info">
+                            <h3 class="movie-title">Barbie</h3>
+                            <div class="movie-meta">
+                                <span>2023</span>
+                                <span>•</span>
+                                <span>1h 54m</span>
+                                <span class="badge">7.1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 3 -->
+                    <div class="movie-card">
+                        <div class="movie-card-poster">
+                            <img src="assets/images/3.jpeg" alt="Movie">
+                            <div class="movie-card-overlay">
+                                <button class="btn-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="movie-card-info">
+                            <h3 class="movie-title">The Batman</h3>
+                            <div class="movie-meta">
+                                <span>2022</span>
+                                <span>•</span>
+                                <span>2h 56m</span>
+                                <span class="badge">7.8</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 4 -->
+                    <div class="movie-card">
+                        <div class="movie-card-poster">
+                            <img src="assets/images/4.jpeg" alt="Movie">
+                            <div class="movie-card-overlay">
+                                <button class="btn-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="movie-card-info">
+                            <h3 class="movie-title">Dune</h3>
+                            <div class="movie-meta">
+                                <span>2021</span>
+                                <span>•</span>
+                                <span>2h 35m</span>
+                                <span class="badge">8.0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 5 -->
+                    <div class="movie-card">
+                        <div class="movie-card-poster">
+                            <img src="assets/images/5.jpeg" alt="Movie">
+                            <div class="movie-card-overlay">
+                                <button class="btn-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="movie-card-info">
+                            <h3 class="movie-title">Interstellar</h3>
+                            <div class="movie-meta">
+                                <span>2014</span>
+                                <span>•</span>
+                                <span>2h 49m</span>
+                                <span class="badge">8.6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 6 -->
+                    <div class="movie-card">
+                        <div class="movie-card-poster">
+                            <img src="assets/images/6.jpeg" alt="Movie">
+                            <div class="movie-card-overlay">
+                                <button class="btn-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="btn-icon">
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="movie-card-info">
+                            <h3 class="movie-title">The Dark Knight</h3>
+                            <div class="movie-meta">
+                                <span>2008</span>
+                                <span>•</span>
+                                <span>2h 32m</span>
+                                <span class="badge">9.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular on MovieHomes -->
+            <section class="movie-section" id="popular">
+                <div class="section-header">
+                    <h2 class="section-title">Popular on MovieHomes</h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="movie-scroll">
+                    <div class="scroll-container">
+                        <!-- Scroll Item 1 -->
+                        <div class="scroll-item">
+                            <img src="assets/images/7.jpeg" alt="Movie">
+                            <span class="scroll-number">1</span>
+                        </div>
+                        <!-- Scroll Item 2 -->
+                        <div class="scroll-item">
+                            <img src="assets/images/8.jpeg" alt="Movie">
+                            <span class="scroll-number">2</span>
+                        </div>
+                        <!-- Scroll Item 3 -->
+                        <div class="scroll-item">
+                            <img src="assets/images/9.jpeg" alt="Movie">
+                            <span class="scroll-number">3</span>
+                        </div>
+                        <!-- Scroll Item 4 -->
+                        <div class="scroll-item">
+                            <img src="assets/images/10.jpeg" alt="Movie">
+                            <span class="scroll-number">4</span>
+                        </div>
+                        <!-- Scroll Item 5 -->
+                        <div class="scroll-item">
+                            <img src="assets/images/1.jpeg" alt="Movie">
+                            <span class="scroll-number">5</span>
+                        </div>
+                        <!-- Scroll Item 6 -->
+                        <div class="scroll-item">
+                            <img src="assets/images/2.jpeg" alt="Movie">
+                            <span class="scroll-number">6</span>
+                        </div>
+                        <!-- Scroll Item 7 -->
+                        <div class="scroll-item">
+                            <img src="assets/images/3.jpeg" alt="Movie">
+                            <span class="scroll-number">7</span>
+                        </div>
+                        <!-- Scroll Item 8 -->
+                        <div class="scroll-item">
+                            <img src="assets/images/4.jpeg" alt="Movie">
+                            <span class="scroll-number">8</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Coming Soon Banner -->
+            <div class="coming-soon-banner" id="coming-soon">
+                <div class="coming-soon-content">
+                    <h3>Coming Soon</h3>
+                    <h2>Avengers Doomsday</h2>
+                    <p>December 9, 2026</p>
+                    <button class="btn btn-outline">Notify Me</button>
+                </div>
+            </div>
+
+            <!-- Top Rated Series -->
+            <section class="movie-section" id="series">
+                <div class="section-header">
+                    <h2 class="section-title">Top Rated Series</h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="series-grid">
+                    <!-- Series Card 1 -->
+                    <div class="series-card">
+                        <img src="assets/images/9.jpeg" alt="Series">
+                        <div class="series-info">
+                            <h4>The Last of Us</h4>
+                            <p>2 Seasons</p>
+                        </div>
+                    </div>
+
+                    <!-- Series Card 2 -->
+                    <div class="series-card">
+                        <img src="assets/images/10.jpeg" alt="Series">
+                        <div class="series-info">
+                            <h4>Game of Thrones</h4>
+                            <p>8 Seasons</p>
+                        </div>
+                    </div>
+
+                    <!-- Series Card 3 -->
+                    <div class="series-card">
+                        <img src="assets/images/1.jpeg" alt="Series">
+                        <div class="series-info">
+                            <h4>Stranger Things</h4>
+                            <p>4 Seasons</p>
+                        </div>
+                    </div>
+
+                    <!-- Series Card 4 -->
+                    <div class="series-card">
+                        <img src="assets/images/2.jpeg" alt="Series">
+                        <div class="series-info">
+                            <h4>The Witcher</h4>
+                            <p>3 Seasons</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MovieHomes</h3>
+                    <p>Your ultimate streaming destination for movies and TV series.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MovieHomes. All rights reserved by Lucky Pam.</p>
+            </div>
+        </footer>
+        </div>
+</body>
+</html>
